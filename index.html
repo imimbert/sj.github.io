@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通话频道 3142</title>
+</head>
+<body>
+<input type="text" id="i1">
+<button onclick="onc()" style="height: 200px;width: 200px;">提交</button>
+<input type="text" id="i2">
+<p id="c"></p>
+<script>
+    function onc(){
+        var i1=document.getElementById("i1").value;
+        var i2=document.getElementById("i2");
+        var c=document.getElementById("c");
+        var ans="";
+        for(let i=0;i<i1.length;i++){
+            if (i1[i]==="a" || i1[i]==="A"){ans+="あ"}
+            else if (i1[i]==="b" || i1[i]==="B"){ans+="か"}
+            else if (i1[i]==="c" || i1[i]==="C"){ans+="さ"}
+            else if (i1[i]==="d" || i1[i]==="D"){ans+="や"}
+            else if (i1[i]==="e" || i1[i]==="E"){ans+="ら"}
+            else if (i1[i]==="f" || i1[i]==="F"){ans+="わ"}　//
+            else if (i1[i]==="g" || i1[i]==="G"){ans+="い"}
+            else if (i1[i]==="h" || i1[i]==="H"){ans+="し"}
+            else if (i1[i]==="i" || i1[i]==="I"){ans+="ち"}
+            else if (i1[i]==="j" || i1[i]==="J"){ans+="ひ"}
+            else if (i1[i]==="k" || i1[i]==="K"){ans+="り"}
+            else if (i1[i]==="l" || i1[i]==="L"){ans+="う"}
+            else if (i1[i]==="m" || i1[i]==="M"){ans+="く"}
+            else if (i1[i]==="n" || i1[i]==="N"){ans+="す"}
+            else if (i1[i]==="o" || i1[i]==="O"){ans+="つ"}
+            else if (i1[i]==="p" || i1[i]==="P"){ans+="ふ"}
+            else if (i1[i]==="q" || i1[i]==="Q"){ans+="え"}
+            else if (i1[i]==="r" || i1[i]==="R"){ans+="て"}
+            else if (i1[i]==="s" || i1[i]==="S"){ans+="へ"}
+            else if (i1[i]==="t" || i1[i]==="T"){ans+="れ"}　//
+            else if (i1[i]==="u" || i1[i]==="U"){ans+="お"}
+            else if (i1[i]==="v" || i1[i]==="V"){ans+="と"}
+            else if (i1[i]==="w" || i1[i]==="W"){ans+="の"}
+            else if (i1[i]==="x" || i1[i]==="X"){ans+="も"}
+            else if (i1[i]==="y" || i1[i]==="Y"){ans+="よ"}
+            else if (i1[i]==="z" || i1[i]==="Z"){ans+="ろ"}
+            else if (i1[i]==="　"){ans+="　"}
+            else if (i1[i]==="."){ans+="."}
+            else if (i1[i]==="。"){ans+="。"}
+            else if (i1[i]==="！"){ans+="！"}
+            else if (i1[i]==="？"){ans+="？"}
+            else if (i1[i]==="，"){ans+="，"}
+            else{
+                ans+=i1[i];
+            }
+        }
+        console.log(ans);
+        // console.log(i1[0]);
+    }
+</script>
+</body>
+</html>
